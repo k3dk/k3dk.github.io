@@ -19,7 +19,7 @@ $( document ).ready(function() {
     var fiveS = soundsArray[4];
     var disabledbutton = 0;
     var numberElem = soundsArray.length;
-    console.log(numberElem);
+    // console.log(numberElem);
 
     $( "#random" ).click(function() {
         var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
@@ -80,7 +80,7 @@ $( document ).ready(function() {
             }
             list.appendChild(entry);
             soundsArray.splice(index,1);
-
+        }
         function checkAndAlert()
         {
             if(disabledbutton == numberElem)
@@ -95,6 +95,7 @@ $( document ).ready(function() {
                 kaval1.pause();
                 kaval1.currentTime = 0;
                 $('#kaval>i').addClass('fa fa-check');
+                $('#kaval_check').show();
                 $('#kaval').attr("disabled", true);
                 if($('#kaval').prop('disabled'))
                 {
@@ -110,6 +111,7 @@ $( document ).ready(function() {
                 supelka1.pause();
                 supelka1.currentTime = 0;
                 $('#supelka>i').addClass('fa fa-check');
+                $('#supelka_check').show();
                 $('#supelka').attr("disabled", true);
                 if($('#supelka').prop('disabled'))
                 {
@@ -125,6 +127,7 @@ $( document ).ready(function() {
                 duduk1.pause();
                 duduk1.currentTime = 0;
                 $('#duduk>i').addClass('fa fa-check');
+                $('#duduk_check').show();
                 $('#duduk').attr("disabled", true);
                 if($('#duduk').prop('disabled'))
                 {
@@ -140,6 +143,7 @@ $( document ).ready(function() {
                 zurla1.pause();
                 zurla1.currentTime = 0;
                 $('#zurla>i').addClass('fa fa-check');
+                $('#zurla_check').show();
                 $('#zurla').attr("disabled", true);
                 if($('#zurla').prop('disabled'))
                 {
@@ -154,6 +158,7 @@ $( document ).ready(function() {
                 gajda1.pause();
                 gajda1.currentTime = 0;
                 $('#gajda>i').addClass('fa fa-check');
+                $('#gajda_check').show();
                 $('#gajda').attr("disabled", true);
                 if($('#gajda').prop('disabled'))
                 {

@@ -5,7 +5,57 @@ html,body{
 .main-row{
     margin-top:2%;
 }
+/*==================IMAGE OVERLAY TRANSPARENT====================*/
+/*.picholder:hover .overlay{
+    opacity:1;
+}*/
+/*.picholder:hover .fancypics{
+    opacity:0.7;
+}*/
+#kaval_check,#duduk_check,#gajda_check,#supelka_check,#zurla_check {
+    display: none;
+}
 
+.picholder{
+    width:240px;
+    position:relative;
+}
+
+/*Centering size and color shenenigans*/
+.overlay {
+  bottom: 0;left: 0; top: 0; right: 0;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  position: absolute;
+  background-color:#D42339;
+  /*background-color: #51bf87;*/
+  border-radius: 50%;
+  opacity:0.6;
+}
+.fancypics{
+    width:100%;
+}
+.text_box{
+  color:white;
+  weight:bold;
+  font-size:6.5em;
+  padding:4px;
+  padding-bottom:50%;
+  text-align:center;}
+/*.slikaOver {
+    background:rgb(255,0,0);
+     display: table;
+     border-radius: 5%;
+ }
+img {
+    display: block;
+}
+.slikaOver:hover img {
+    visibility: hidden;
+     border-radius: 5%;
+     opacity: 0.7;
+ }*/
 .slika img{
     max-height: 240px;
     border:2px solid #999;
