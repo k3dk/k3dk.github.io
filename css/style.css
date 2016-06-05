@@ -10,7 +10,10 @@ html,body{
     max-height: 240px;
     border:2px solid #999;
     box-shadow: 3px 3px 3px #444;
-    /*border-radius: 50%;*/
+    border-radius: 5%;
+}
+.btn-lg{
+    border-radius: 2px;
 }
 .dugme{
     margin-top:5px;
