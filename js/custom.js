@@ -80,19 +80,7 @@ $( document ).ready(function() {
             }
             list.appendChild(entry);
             soundsArray.splice(index,1);
-            //console.log(numberElem);
-            //console.log(disabledbutton);
 
-             //console.log(disabledbutton);
-            //  if(numberElem == null)
-            // {
-            //     swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-            // }
-        }
-        // if(index < 0)
-        // {
-        //     swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
-        // }
         function checkAndAlert()
         {
             if(disabledbutton == numberElem)
@@ -113,7 +101,6 @@ $( document ).ready(function() {
                     disabledbutton++;
                     checkAndAlert();
                 }
-                //alert(disabledbutton);
             }
 
         });
@@ -129,7 +116,6 @@ $( document ).ready(function() {
                     disabledbutton++;
                     checkAndAlert();
                 }
-                //alert(disabledbutton);
             }
 
         });
@@ -145,7 +131,6 @@ $( document ).ready(function() {
                     disabledbutton++;
                     checkAndAlert();
                 }
-                //alert(disabledbutton);
             }
 
         });
@@ -161,7 +146,6 @@ $( document ).ready(function() {
                     disabledbutton++;
                     checkAndAlert();
                 }
-                //alert(disabledbutton);
             }
         });
         $("#gajda").click(function(){
@@ -176,14 +160,10 @@ $( document ).ready(function() {
                     disabledbutton++;
                     checkAndAlert();
                 }
-                //alert(disabledbutton);
             }
         });
 
-
     });
-
-    //swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
     // $( "#random" ).click(function() {
     //     var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
     //     $(".hereSounds").html(rand);
