@@ -19,6 +19,7 @@ $( document ).ready(function() {
     var fiveS = soundsArray[4];
     var disabledbutton = 0;
     var numberElem = soundsArray.length;
+    console.log(numberElem);
 
     $( "#random" ).click(function() {
         var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
@@ -92,7 +93,13 @@ $( document ).ready(function() {
         // {
         //     swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
         // }
-
+        function checkAndAlert()
+        {
+            if(disabledbutton == numberElem)
+            {
+                swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "ВО РЕД" });
+            }
+        }
         // var click1=7;
         $("#kaval").click(function(){
 
@@ -103,12 +110,8 @@ $( document ).ready(function() {
                 $('#kaval').attr("disabled", true);
                 if($('#kaval').prop('disabled'))
                 {
-                disabledbutton++;
-                numberElem--;
-                    if(disabledbutton == 5)
-                   {
-                       swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-                   }
+                    disabledbutton++;
+                    checkAndAlert();
                 }
                 //alert(disabledbutton);
             }
@@ -123,12 +126,8 @@ $( document ).ready(function() {
                 $('#supelka').attr("disabled", true);
                 if($('#supelka').prop('disabled'))
                 {
-                disabledbutton++;
-                numberElem--;
-                if(disabledbutton == 5)
-               {
-                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-               }
+                    disabledbutton++;
+                    checkAndAlert();
                 }
                 //alert(disabledbutton);
             }
@@ -143,12 +142,8 @@ $( document ).ready(function() {
                 $('#duduk').attr("disabled", true);
                 if($('#duduk').prop('disabled'))
                 {
-                disabledbutton++;
-                numberElem--;
-                if(disabledbutton == 5)
-               {
-                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-               }
+                    disabledbutton++;
+                    checkAndAlert();
                 }
                 //alert(disabledbutton);
             }
@@ -163,12 +158,8 @@ $( document ).ready(function() {
                 $('#zurla').attr("disabled", true);
                 if($('#zurla').prop('disabled'))
                 {
-                disabledbutton++;
-                numberElem--;
-                if(disabledbutton == 5)
-               {
-                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-               }
+                    disabledbutton++;
+                    checkAndAlert();
                 }
                 //alert(disabledbutton);
             }
@@ -182,12 +173,8 @@ $( document ).ready(function() {
                 $('#gajda').attr("disabled", true);
                 if($('#gajda').prop('disabled'))
                 {
-                disabledbutton++;
-                numberElem--;
-                if(disabledbutton == 5)
-               {
-                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
-               }
+                    disabledbutton++;
+                    checkAndAlert();
                 }
                 //alert(disabledbutton);
             }
