@@ -17,6 +17,8 @@ $( document ).ready(function() {
     var threeS = soundsArray[2];
     var fourS = soundsArray[3];
     var fiveS = soundsArray[4];
+    var disabledbutton = 0;
+    var numberElem = soundsArray.length;
 
     $( "#random" ).click(function() {
         var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
@@ -77,7 +79,20 @@ $( document ).ready(function() {
             }
             list.appendChild(entry);
             soundsArray.splice(index,1);
+            //console.log(numberElem);
+            //console.log(disabledbutton);
+
+             //console.log(disabledbutton);
+            //  if(numberElem == null)
+            // {
+            //     swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+            // }
         }
+        // if(index < 0)
+        // {
+        //     swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
+        // }
+
         // var click1=7;
         $("#kaval").click(function(){
 
@@ -86,6 +101,16 @@ $( document ).ready(function() {
                 kaval1.currentTime = 0;
                 $('#kaval>i').addClass('fa fa-check');
                 $('#kaval').attr("disabled", true);
+                if($('#kaval').prop('disabled'))
+                {
+                disabledbutton++;
+                numberElem--;
+                    if(disabledbutton == 5)
+                   {
+                       swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+                   }
+                }
+                //alert(disabledbutton);
             }
 
         });
@@ -96,6 +121,16 @@ $( document ).ready(function() {
                 supelka1.currentTime = 0;
                 $('#supelka>i').addClass('fa fa-check');
                 $('#supelka').attr("disabled", true);
+                if($('#supelka').prop('disabled'))
+                {
+                disabledbutton++;
+                numberElem--;
+                if(disabledbutton == 5)
+               {
+                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+               }
+                }
+                //alert(disabledbutton);
             }
 
         });
@@ -106,6 +141,16 @@ $( document ).ready(function() {
                 duduk1.currentTime = 0;
                 $('#duduk>i').addClass('fa fa-check');
                 $('#duduk').attr("disabled", true);
+                if($('#duduk').prop('disabled'))
+                {
+                disabledbutton++;
+                numberElem--;
+                if(disabledbutton == 5)
+               {
+                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+               }
+                }
+                //alert(disabledbutton);
             }
 
         });
@@ -115,7 +160,17 @@ $( document ).ready(function() {
                 zurla1.pause();
                 zurla1.currentTime = 0;
                 $('#zurla>i').addClass('fa fa-check');
-                $('#zurla').attr("disabled", true)
+                $('#zurla').attr("disabled", true);
+                if($('#zurla').prop('disabled'))
+                {
+                disabledbutton++;
+                numberElem--;
+                if(disabledbutton == 5)
+               {
+                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+               }
+                }
+                //alert(disabledbutton);
             }
         });
         $("#gajda").click(function(){
@@ -124,12 +179,24 @@ $( document ).ready(function() {
                 gajda1.pause();
                 gajda1.currentTime = 0;
                 $('#gajda>i').addClass('fa fa-check');
-                $('#gajda').attr("disabled", true)
+                $('#gajda').attr("disabled", true);
+                if($('#gajda').prop('disabled'))
+                {
+                disabledbutton++;
+                numberElem--;
+                if(disabledbutton == 5)
+               {
+                   swal({   title: "Победник!",   text: "Ги погодивте сите инструменти!",   type: "success",   confirmButtonText: "OK" });
+               }
+                }
+                //alert(disabledbutton);
             }
         });
+
+
     });
 
-
+    //swal({   title: "Error!",   text: "Here's my error message!",   type: "error",   confirmButtonText: "Cool" });
     // $( "#random" ).click(function() {
     //     var rand = soundsArray[Math.floor(Math.random() * soundsArray.length)];
     //     $(".hereSounds").html(rand);
