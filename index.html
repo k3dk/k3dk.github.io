@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,105 +9,103 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  </head>
-  <body>
-      <div class="container-fluid">
-          <div class="row main-row">
-              <div class="col-md-2 col-sm-2">
-                  <br><br><br><br><br><br><br><br><br><br>
-                  <!-- <button type="button" class="btn btn-hot text-uppercase btn-lg">Hot button</button> -->
-           <!-- <button type="button" class="btn btn-sunny text-uppercase btn-lg">Sunny button</button> -->
-           <!-- <button type="button" class="btn btn-fresh text-uppercase btn-lg">Fresh button</button> -->
-           <!-- <button type="button" class="btn btn-sky text-uppercase btn-lg">Sky button</button> -->
-              <a class="btn btn-lg btn-fresh text-uppercase" id="random" ><i class="fa fa-play-circle-o"></i>&nbsp;Пушти звук</a>
-              <br><br>
-              <a class="btn btn-lg btn-sky text-uppercase" href="javascript:window.top.location.reload(true)" class="continue"><i class="fa fa-refresh"></i>&nbsp;Од Почеток</a>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row main-row">
+        <div class="col-md-2 col-sm-2">
+            <br><br><br><br><br><br><br><br><br><br>
+            <a class="btn btn-lg btn-fresh text-uppercase" id="random"><i class="fa fa-play-circle-o"></i>&nbsp;Пушти
+                звук</a>
+            <br><br>
+            <a class="btn btn-lg btn-sky text-uppercase" href="javascript:window.top.location.reload(true)"
+               class="continue"><i class="fa fa-refresh"></i>&nbsp;Од Почеток</a>
 
-              <div class="hereSounds"></div>
+            <div class="hereSounds"></div>
 
-              <ul id="test" hidden>
+            <ul id="test" hidden>
 
-              </ul>
-              </div>
-              <div class="col-md-10 col-sm-10 pull-right">
-                  <!-- KAVAL -->
-                     <div class="col-md-4 col-sm-4 slika">
-                         <div class="picholder">
+            </ul>
+        </div>
+        <div class="col-md-10 col-sm-10 pull-right">
+            <!-- KAVAL -->
+            <div class="col-md-4 col-sm-4 slika">
+                <div class="picholder">
                     <img src="images/kaval_img.jpg" class="fancypics img-responsive" alt="">
                     <div id="kaval_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
                 </div>
-                    <button class="btn btn-lg btn-hot text-uppercase dugme" id="kaval"><i></i>&nbsp;Кавал&nbsp;</button>
-                    <audio controls id="kaval_zvuk" hidden>
-                      <source src="sounds/4.Kaval.mp3" type="audio/mpeg">
-                    </audio>
-                     </div>
-                     <!-- SUPELKA -->
-                     <div class="col-md-4 col-sm-4 slika">
-                         <div class="picholder">
+                <button class="btn btn-lg btn-hot text-uppercase dugme" id="kaval"><i></i>&nbsp;Кавал&nbsp;</button>
+                <audio controls id="kaval_zvuk" hidden>
+                    <source src="sounds/4.Kaval.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <!-- SUPELKA -->
+            <div class="col-md-4 col-sm-4 slika">
+                <div class="picholder">
                     <img src="images/supelka_img.jpg" class="fancypics img-responsive" alt="">
                     <div id="supelka_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
                 </div>
-                    <button class="btn btn-lg btn-hot text-uppercase dugme" id="supelka"><i></i>&nbsp;Шупелка&nbsp;</button>
-                    <audio controls id="supelka_zvuk" hidden>
-                      <source src="sounds/1.Supelka.mp3" type="audio/mpeg">
-                    </audio>
-                     </div>
-                     <!-- DUDUK  -->
-                     <div class="col-md-4 col-sm-4 slika">
-                         <div class="picholder">
+                <button class="btn btn-lg btn-hot text-uppercase dugme" id="supelka"><i></i>&nbsp;Шупелка&nbsp;</button>
+                <audio controls id="supelka_zvuk" hidden>
+                    <source src="sounds/1.Supelka.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <!-- DUDUK  -->
+            <div class="col-md-4 col-sm-4 slika">
+                <div class="picholder">
                     <img src="images/duduk_img.jpg" class="fancypics img-responsive" alt="">
                     <div id="duduk_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
                 </div>
-                    <button class="btn btn-lg btn-hot text-uppercase dugme" id="duduk"><i></i>&nbsp;Дудук&nbsp;</button>
-                    <audio controls id="duduk_zvuk" hidden>
-                      <source src="sounds/3.Duduk.mp3" type="audio/mpeg">
-                    </audio>
-                     </div>
+                <button class="btn btn-lg btn-hot text-uppercase dugme" id="duduk"><i></i>&nbsp;Дудук&nbsp;</button>
+                <audio controls id="duduk_zvuk" hidden>
+                    <source src="sounds/3.Duduk.mp3" type="audio/mpeg">
+                </audio>
             </div>
+        </div>
 
-            <div class="col-md-10 col-sm-10 pull-right">
-                     <!--ZURLA  -->
-                     <div class="col-md-4 col-sm-4 slika">
-                         <div class="picholder">
+        <div class="col-md-10 col-sm-10 pull-right">
+            <!--ZURLA  -->
+            <div class="col-md-4 col-sm-4 slika">
+                <div class="picholder">
                     <img src="images/zurla_img.jpg" class="fancypics img-responsive" alt="">
                     <div id="zurla_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
                 </div>
-                    <button class="btn btn-lg btn-hot text-uppercase dugme" id="zurla"><i></i>&nbsp;Зурла&nbsp;</button>
-                    <audio controls id="zurla_zvuk" hidden>
-                      <source src="sounds/7.Zurla.mp3" type="audio/mpeg">
-                    </audio>
-                     </div>
+                <button class="btn btn-lg btn-hot text-uppercase dugme" id="zurla"><i></i>&nbsp;Зурла&nbsp;</button>
+                <audio controls id="zurla_zvuk" hidden>
+                    <source src="sounds/7.Zurla.mp3" type="audio/mpeg">
+                </audio>
+            </div>
 
 
-                     <!-- GAJDA-->
-                     <div class="col-md-4 col-sm-4 slika">
-                         <div class="picholder">
-                            <img src="images/gajda_img.jpg" class="fancypics img-responsive" alt="">
-                            <div id="gajda_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
-                        </div>
-                        <button class="btn btn-lg btn-hot text-uppercase dugme" id="gajda"><i></i>&nbsp;Гајда&nbsp;</button>
-                        <audio controls id="gajda_zvuk" hidden>
-                          <source src="sounds/5.Gajda.mp3" type="audio/mpeg">
-                        </audio>
-                     </div>
+            <!-- GAJDA-->
+            <div class="col-md-4 col-sm-4 slika">
+                <div class="picholder">
+                    <img src="images/gajda_img.jpg" class="fancypics img-responsive" alt="">
+                    <div id="gajda_check" class="overlay"><p class="text_box"><i class="fa fa-check"></i></p></div>
                 </div>
-              </div>
+                <button class="btn btn-lg btn-hot text-uppercase dugme" id="gajda"><i></i>&nbsp;Гајда&nbsp;</button>
+                <audio controls id="gajda_zvuk" hidden>
+                    <source src="sounds/5.Gajda.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
 
-          </div>
-      </div>
+</div>
+</div>
 
 
-    <script src="js/jquery.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src ="js/custom.js"></script>
-    <script src="dist/sweetalert.min.js"></script>
-  </body>
+<script src="js/jquery.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="dist/sweetalert.min.js"></script>
+</body>
 </html>
